@@ -28,6 +28,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="173dp"
         android:layout_marginRight="173dp"
+        android:background="#009688"
         android:text="Ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

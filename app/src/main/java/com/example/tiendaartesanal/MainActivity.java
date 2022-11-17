@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //icono//
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         usuario = (EditText)findViewById(R.id.editexusuario);
         clave = (EditText)findViewById(R.id.editexclave);
         acceder = (Button)findViewById(R.id.btnIngresar);
