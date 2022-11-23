@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText usuario,clave;
-    Button acceder;
+    Button acceder,registrarse;
     String user,password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         usuario = (EditText)findViewById(R.id.editexusuario);
         clave = (EditText)findViewById(R.id.editexclave);
+        registrarse =(Button) findViewById(R.id.btnRegistrar);
         acceder = (Button)findViewById(R.id.btnIngresar);
         acceder.setOnClickListener(this);
     }
@@ -38,5 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent siguiente = new Intent(this,MainActivity3.class);
         startActivity(siguiente);
         }
+    registrarse.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            startActivity(new Intent(view.getContext(),MainActivity4.class));
+        }
+    });
     }
+
+
+
 }
