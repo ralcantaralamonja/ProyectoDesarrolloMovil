@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="264dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
+        android:layout_width="224dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
