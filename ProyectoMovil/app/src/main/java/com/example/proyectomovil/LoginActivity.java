@@ -18,12 +18,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        //icono
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        //
-
         usuario = (EditText) findViewById(R.id.editexusuario);
         clave = (EditText) findViewById(R.id.editexclave);
         registrarse = (Button) findViewById(R.id.btnRegistrar);
