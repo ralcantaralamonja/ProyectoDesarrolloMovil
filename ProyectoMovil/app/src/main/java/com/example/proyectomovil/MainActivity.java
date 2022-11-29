@@ -13,23 +13,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Animation animacion1,animacion2;
-    TextView text1,text2;
-    ImageView img1;
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //icono//
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         getWindow().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        animacion1 = AnimationUtils. loadAnimation(  this,R.anim.arriba);
-        animacion2  = AnimationUtils. loadAnimation( this,R.anim.abajo);
-        text1 = findViewById(R.id.txtvLoading1);
-        text2 = findViewById(R.id.txtvLoading2);
-        img1 = findViewById(R.id.imglogo);
+        setContentView(R.layout.activity_main);
+        Animation animacion1 = AnimationUtils. loadAnimation(  this,R.anim.arriba);
+        Animation animacion2  = AnimationUtils. loadAnimation( this,R.anim.abajo);
+        TextView text1 = findViewById(R.id.txtvLoading1);
+        TextView text2 = findViewById(R.id.txtvLoading2);
+        ImageView img1 = findViewById(R.id.imglogo);
         img1.setAnimation(animacion1);
         text1.setAnimation(animacion2);
         text2.setAnimation(animacion2);

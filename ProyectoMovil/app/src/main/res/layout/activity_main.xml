@@ -6,46 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtvLoading1"
-        android:layout_width="194dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="88dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Cargando "
-        android:textColor="#43a047"
-        android:textSize="32sp"
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/magne" />
 
     <TextView
         android:id="@+id/txtvLoading2"
-        android:layout_width="174dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="176dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Aplicación "
-        android:textColor="#43a047"
-        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/abel"
+        android:text="Aplicacion"
+        android:textColor="@color/principal"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imglogo" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imglogo"
-        android:layout_width="278dp"
-        android:layout_height="243dp"
-        android:layout_marginTop="76dp"
+    <TextView
+        android:id="@+id/txtvLoading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="Cargando"
+        android:textColor="@color/principal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtvLoading2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/magne" />
-
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
