@@ -1,92 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".LoginActivity"
+    android:padding="25dp"
+    android:orientation="vertical">
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="246dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="80dp"
-        android:contentDescription="imaguen-logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/magne"
-        tools:ignore="ImageContrastCheck" />
-
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="173dp"
-        android:background="#009688"
-        android:text="Ingresar"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editexclave" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/magne"
+        android:transitionName="logoDeLogin"
+        android:layout_gravity="center"/>
+  <TextView
+      android:id="@+id/texvbienvenida"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/abel"
+      android:text="Bienvenid@ !!"
+      android:layout_marginTop="28dp"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:transitionName="textTrans"/>
 
     <TextView
-        android:id="@+id/textvuser"
+        android:id="@+id/txtvvcontinuar"
+        android:layout_marginTop="14dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="24dp"
-        android:text="Usuario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:fontFamily="@font/abel"
+        android:text="Inicia sesion para continuar"
+        android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textvpassword"
-        android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/usuario"
+            android:hint="Nombre de usuario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editexusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="72dp"
-        android:text="Clave"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textvuser" />
+        android:layout_marginTop="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/password"
+            android:hint="Clave de usuario"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <EditText
-        android:id="@+id/editexclave"
-        android:layout_width="251dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="72dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editexusuario"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editexclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/editexusuario"
-        android:layout_width="250dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="74dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="173dp"
-        android:text="REGISTRATE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/btnIngresar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Ingresar"
+           android:fontFamily="@font/abel"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/txtvRegistrar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/abel"
+            android:text="¿Eres nuevo? Registrate !!"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

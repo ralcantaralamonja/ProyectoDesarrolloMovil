@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity   {
     String user = "", password =""; //
     EditText usuario,clave;
-    Button registrarse,acceder;
+    TextView registrarse;
+    Button acceder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class LoginActivity extends AppCompatActivity   {
         //Mandamos a buscar el valor por referencia por id
         usuario  = findViewById(R.id.editexusuario);
         clave = findViewById(R.id.editexclave);
-        registrarse =  findViewById(R.id.btnRegistrar);
+        registrarse =  findViewById(R.id.txtvRegistrar);
         acceder =  findViewById(R.id.btnIngresar);
         //Creamos evento click para boton acceder
         acceder.setOnClickListener(new View.OnClickListener() {
