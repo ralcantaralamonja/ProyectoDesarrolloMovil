@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ApartadoCosta">
+
     <TextView
         android:id="@+id/txvCosta"
-        android:layout_width="94dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginBottom="649dp"
+        android:layout_width="190dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
         android:text="COSTA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:textColor="#266718"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,42 +24,59 @@
         android:layout_width="165dp"
         android:layout_height="124dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginRight="230dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvCosta"
         app:srcCompat="@drawable/tiendacosta1" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="149dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/tiendacosta2" />
-
-    <ImageView
         android:id="@+id/imageView9"
         android:layout_width="145dp"
         android:layout_height="130dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="226dp"
-        android:layout_marginRight="226dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/tiendacosta3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="149dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="264dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tiendacosta2" />
+
+    <Button
+        android:id="@+id/btnTienda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="59dp"
+        android:text="Cult Gaia"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/txvCosta" />
+
+    <Button
+        android:id="@+id/btnTienda2"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="118dp"
+        android:text="MAKA"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/btnTienda1" />
+
+    <Button
+        android:id="@+id/btnTienda3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="118dp"
+        android:text="TMBR WOOD"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/btnTienda2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

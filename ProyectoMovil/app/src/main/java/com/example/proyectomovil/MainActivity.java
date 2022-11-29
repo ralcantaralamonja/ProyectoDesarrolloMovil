@@ -21,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //icono//
+
+        //icono
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        //
+
+
+
         getWindow().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         animacion1 = AnimationUtils. loadAnimation(  this,R.anim.arriba);
         animacion2  = AnimationUtils. loadAnimation( this,R.anim.abajo);

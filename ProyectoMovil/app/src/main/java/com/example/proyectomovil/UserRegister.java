@@ -17,6 +17,11 @@ public class UserRegister extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_user_register);
+        //icono
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        //
+
         usuario = (EditText) findViewById(id.edtUsuario);
         contrasena = (EditText) findViewById(id.edtContraseña);
         agrega = (Button) findViewById(id.btnAgregar);

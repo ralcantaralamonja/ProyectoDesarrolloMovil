@@ -17,6 +17,10 @@ public class Warning extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_warning);
+        //icono
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        //
         salida = (TextView) findViewById(R.id.txtSalida);
         salida.setText("Usuario y/o contraseña incorrecto");
         atras = (Button) findViewById(R.id.btnAtras);

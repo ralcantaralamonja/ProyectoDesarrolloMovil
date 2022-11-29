@@ -13,6 +13,12 @@ public class Welcome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+        //icono
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        //
+
         costa =  findViewById(R.id.btnCosta);
         sierra =   findViewById(R.id.btnSierra);
         selva =   findViewById(R.id.btnSelva);
