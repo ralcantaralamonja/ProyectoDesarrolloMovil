@@ -13,25 +13,28 @@
         android:src="@drawable/magne"
         android:transitionName="logoDeLogin"
         android:layout_gravity="center"/>
+
     <TextView
         android:id="@+id/texvbienvenida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/abel"
         android:text="Bienvenid@ !!"
-        android:layout_marginTop="28dp"
+        android:textColor="#1B5E20"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_gravity="center"
-        android:transitionName="textTrans"/>
+        android:transitionName="textTrans" />
 
     <TextView
         android:id="@+id/txtvvcontinuar"
-        android:layout_marginTop="14dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:fontFamily="@font/abel"
         android:text="Inicia sesion para continuar"
+        android:textColor="#1B5E20"
         android:textSize="24sp" />
 
     <LinearLayout

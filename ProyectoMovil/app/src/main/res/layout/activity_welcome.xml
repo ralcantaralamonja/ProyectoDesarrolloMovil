@@ -8,10 +8,13 @@
 
     <TextView
         android:id="@+id/texvwelcome"
-        android:layout_width="157dp"
-        android:layout_height="30dp"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:text="Welcome "
+        android:textColor="#1B5E20"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,19 +129,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="104dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginBottom="88dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="105dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="55dp"
+        android:text="Aquí podrás encontrar productos de Tumbes, Tacna, entre otros."
+        android:textColor="#1B5E20"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/texvwelcome" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView2"
