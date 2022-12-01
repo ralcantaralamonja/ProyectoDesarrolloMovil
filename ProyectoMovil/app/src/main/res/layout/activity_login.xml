@@ -13,17 +13,17 @@
         android:src="@drawable/magne"
         android:transitionName="logoDeLogin"
         android:layout_gravity="center"/>
-  <TextView
-      android:id="@+id/texvbienvenida"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:fontFamily="@font/abel"
-      android:text="Bienvenid@ !!"
-      android:layout_marginTop="28dp"
-      android:textSize="32sp"
-      android:textStyle="bold"
-      android:layout_gravity="center"
-      android:transitionName="textTrans"/>
+    <TextView
+        android:id="@+id/texvbienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="Bienvenid@ !!"
+        android:layout_marginTop="28dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:transitionName="textTrans"/>
 
     <TextView
         android:id="@+id/txtvvcontinuar"
@@ -35,10 +35,10 @@
         android:textSize="24sp" />
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,38 +56,38 @@
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:orientation="vertical">
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:id="@+id/password"
-            android:hint="Clave de usuario"
-            app:passwordToggleEnabled="true"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editexclave"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginBottom="12dp"
+                android:id="@+id/password"
+                android:hint="Clave de usuario"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    </LinearLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editexclave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abel"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-       <com.google.android.material.button.MaterialButton
-           android:id="@+id/btnIngresar"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Ingresar"
-           android:fontFamily="@font/abel"
-           android:layout_marginTop="24dp"
-           android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            android:fontFamily="@font/abel"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"/>
 
         <TextView
             android:id="@+id/txtvRegistrar"

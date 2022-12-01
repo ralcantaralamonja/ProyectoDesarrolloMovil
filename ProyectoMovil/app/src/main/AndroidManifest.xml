@@ -34,7 +34,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".UserRegister"
+            android:name=".Welcome"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -48,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Welcome"
+            android:name=".UserRegister"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
