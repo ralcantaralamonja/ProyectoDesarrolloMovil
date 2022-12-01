@@ -7,14 +7,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputEditText;
+
+import Objetos.Usuario;
+
 public class LoginActivity extends AppCompatActivity {
-    String user = "", password =""; //
-    EditText usuario,clave;
+     //
+     TextInputEditText usuario,clave;
     TextView registrarse;
     Button acceder;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +30,38 @@ public class LoginActivity extends AppCompatActivity {
         clave = findViewById(R.id.editexclave);
         registrarse =  findViewById(R.id.txtvRegistrar);
         acceder =  findViewById(R.id.btnIngresar);
+
         //Creamos evento click para boton acceder
         acceder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int cantidad =4;
+                Usuario usuerTienda[] = new Usuario[cantidad];
+                usuerTienda[0] = new Usuario("ricardo", "123");
+                usuerTienda[1] = new Usuario("Yeison", "SoyDeSistemas");
+                usuerTienda[2] = new Usuario("Ambar", "SoyPsicoloca");
+                usuerTienda[3] = new Usuario("", "");
+                String user , password ;
+
                 //obtenemos los valores digitados por el usuario
                 user = usuario.getText().toString();
                 password = clave.getText().toString();
                 //generamos validacion
-                if (user.equals("user") && password.equals("clave")) {
-                    Intent siguiente = new Intent(LoginActivity.this,Welcome.class);
+                boolean ingreso = false;
+                for(int i=0;i<cantidad;i++) {
+                    if ((user.equals(usuerTienda[i].getUseName())) && (password.equals(usuerTienda[i].getPassword()))) {
+                        ingreso = true;
+
+                        break;
+                    }
+
+
+                }
+                if (ingreso) {
+                    Intent siguiente = new Intent(LoginActivity.this, Welcome.class);
                     startActivity(siguiente);
                 } else {
-                    Intent siguiente = new Intent(LoginActivity.this,Warning.class);
+                    Intent siguiente = new Intent(LoginActivity.this, Warning.class);
                     startActivity(siguiente);
                 }
             }
