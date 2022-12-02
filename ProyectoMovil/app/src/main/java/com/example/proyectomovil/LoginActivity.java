@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 usuerTienda[0] = new Usuario("ricardo", "123");
                 usuerTienda[1] = new Usuario("Yeison", "SoyDeSistemas");
                 usuerTienda[2] = new Usuario("Ambar", "SoyPsicoloca");
-                usuerTienda[3] = new Usuario("", "");
+                usuerTienda[3] = new Usuario("prueba", "prueba");
                 String user , password ;
 
                 //obtenemos los valores digitados por el usuario
@@ -51,12 +51,10 @@ public class LoginActivity extends AppCompatActivity {
                 for(int i=0;i<cantidad;i++) {
                     if ((user.equals(usuerTienda[i].getUseName())) && (password.equals(usuerTienda[i].getPassword()))) {
                         ingreso = true;
-
                         break;
                     }
 
-
-                }
+               }
                 if (ingreso) {
                     Intent siguiente = new Intent(LoginActivity.this, Welcome.class);
                     startActivity(siguiente);
