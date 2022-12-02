@@ -6,4 +6,129 @@
     android:layout_height="match_parent"
     tools:context=".ApartadoSelva">
 
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="131dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/txvSelva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selva" />
+
+    <TextView
+        android:id="@+id/txvSelva"
+        android:layout_width="157dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="57dp"
+        android:text="SELVA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="134dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnArapa"
+        app:layout_constraintTop_toBottomOf="@+id/txvSelva"
+        app:srcCompat="@drawable/tiendaselva1" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="124dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMarotishobo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:srcCompat="@drawable/tiendaselva2" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="122dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnShipibo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:srcCompat="@drawable/tiendaselva3" />
+
+    <Button
+        android:id="@+id/btnArapa"
+        android:layout_width="141dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="ARAPA"
+        app:iconTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/btnMarotishobo"
+        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:rippleColor="#009688" />
+
+    <Button
+        android:id="@+id/btnMarotishobo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="MAROTISHOBO"
+        app:layout_constraintBottom_toTopOf="@+id/btnShipibo"
+        app:layout_constraintEnd_toStartOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArapa" />
+
+    <Button
+        android:id="@+id/btnShipibo"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="SHIPIBO"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtrasSelva"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMarotishobo" />
+
+    <Button
+        android:id="@+id/btnAtrasSelva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="70dp"
+        android:text="ATRAS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShipibo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
