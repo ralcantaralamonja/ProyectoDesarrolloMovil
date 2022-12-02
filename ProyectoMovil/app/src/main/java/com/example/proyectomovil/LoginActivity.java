@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                 usuerTienda[0] = new Usuario("ricardo", "123");
                 usuerTienda[1] = new Usuario("Yeison", "SoyDeSistemas");
                 usuerTienda[2] = new Usuario("Ambar", "SoyPsicoloca");
-                usuerTienda[3] = new Usuario("prueba", "prueba");
+                usuerTienda[3] = new Usuario("", "");
                 String user , password ;
 
                 //obtenemos los valores digitados por el usuario

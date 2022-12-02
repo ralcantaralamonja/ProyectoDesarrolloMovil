@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:rippleColor="#009688" />
+        app:rippleColor="#40CDC0" />
 
     <Button
         android:id="@+id/btnMarotishobo"
@@ -114,7 +114,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnAtrasSelva"
         app:layout_constraintEnd_toStartOf="@+id/imageView22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMarotishobo" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMarotishobo"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnAtrasSelva"
