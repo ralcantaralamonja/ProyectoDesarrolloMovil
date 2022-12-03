@@ -15,6 +15,7 @@
         android:layout_marginEnd="105dp"
         android:layout_marginRight="105dp"
         android:text="S/15.00"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -29,6 +30,7 @@
         android:layout_marginEnd="105dp"
         android:layout_marginRight="105dp"
         android:text="S/ 10.00"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView33"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -43,6 +45,7 @@
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:text="Adornos y recuerdos de la Selva"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView34"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -57,6 +60,7 @@
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:text="Pulseras elaboradas por artesanos de la Selva"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView33"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
@@ -86,7 +90,9 @@
         android:layout_marginRight="70dp"
         android:layout_marginBottom="94dp"
         android:text="SHIPIBO"
+        android:textColor="#244E26"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView31"
@@ -160,7 +166,8 @@
         android:text="Recuerdos de animales de la Selva Amazónica"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView32"
-        app:layout_constraintTop_toBottomOf="@+id/txvShipibo" />
+        app:layout_constraintTop_toBottomOf="@+id/txvShipibo"
+        android:textColor="#43A047" />
 
     <TextView
         android:id="@+id/textView21"
@@ -171,6 +178,7 @@
         android:layout_marginEnd="105dp"
         android:layout_marginRight="105dp"
         android:text="S/ 20.00"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView32"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />

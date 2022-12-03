@@ -17,6 +17,7 @@
         android:layout_marginRight="105dp"
         android:layout_marginBottom="41dp"
         android:text="S/ 75.00"
+        android:textColor="#43A047"
         app:layout_constraintBottom_toTopOf="@+id/txvSonajera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +35,7 @@
         android:layout_marginRight="70dp"
         android:layout_marginBottom="77dp"
         android:text="Adorno de Mesa - tribu Shipiba"
+        android:textColor="#43A047"
         app:layout_constraintBottom_toTopOf="@+id/btnAtrasTiendaS1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
@@ -48,6 +50,7 @@
         android:layout_marginEnd="70dp"
         android:layout_marginRight="70dp"
         android:text="Sonajera Selvatica de Loreto - "
+        android:textColor="#43A047"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
@@ -78,8 +81,10 @@
         android:layout_marginRight="88dp"
         android:layout_marginBottom="20dp"
         android:text="ARAPA"
+        android:textColor="#43A047"
         android:textColorLink="#8BC34A"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txvCuadro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView23"
@@ -161,6 +166,7 @@
         android:layout_marginRight="70dp"
         android:layout_marginBottom="77dp"
         android:text="Arte de la Ciudad de Iquitos TUCAN- 18.5 x 22.2."
+        android:textColor="#43A047"
         app:layout_constraintBottom_toTopOf="@+id/txvSonajera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView24"
@@ -178,7 +184,8 @@
         android:text="S/ 40.00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
-        app:layout_constraintTop_toBottomOf="@+id/txvSonajera" />
+        app:layout_constraintTop_toBottomOf="@+id/txvSonajera"
+        android:textColor="#43A047" />
 
     <TextView
         android:id="@+id/txvPrecioS3"
@@ -190,6 +197,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:text="S/ 25.00"
+        android:textColor="#43A047"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toBottomOf="@+id/txvAdorno" />

@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.util.ArrayList;
+
 import Objetos.Usuario;
 
 public class LoginActivity extends AppCompatActivity {
@@ -35,12 +37,15 @@ public class LoginActivity extends AppCompatActivity {
         acceder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int cantidad =4;
-                Usuario usuerTienda[] = new Usuario[cantidad];
-                usuerTienda[0] = new Usuario("ricardo", "123");
-                usuerTienda[1] = new Usuario("Yeison", "SoyDeSistemas");
-                usuerTienda[2] = new Usuario("Ambar", "SoyPsicoloca");
-                usuerTienda[3] = new Usuario("", "");
+                ArrayList<Usuario> userTienda = new ArrayList<Usuario>();
+
+                Usuario user1  =new Usuario("Ricardo","contrasena123");
+                userTienda.add(user1);
+                Usuario user2  =new Usuario("Yeison","SoyDeSistemas");
+                userTienda.add(user2);
+                Usuario user3  =new Usuario("Ambar","123");
+                userTienda.add(user3);
+
                 String user , password ;
 
                 //obtenemos los valores digitados por el usuario
@@ -48,8 +53,8 @@ public class LoginActivity extends AppCompatActivity {
                 password = clave.getText().toString();
                 //generamos validacion
                 boolean ingreso = false;
-                for(int i=0;i<cantidad;i++) {
-                    if ((user.equals(usuerTienda[i].getUseName())) && (password.equals(usuerTienda[i].getPassword()))) {
+                for(int i=0;i<userTienda.size();i++) {
+                    if (user.equals(userTienda.get(i).getUseName()) && password.equals(userTienda.get(i).getPassword())) {
                         ingreso = true;
                         break;
                     }
