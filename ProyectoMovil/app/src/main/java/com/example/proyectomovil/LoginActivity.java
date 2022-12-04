@@ -45,9 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                 userTienda.add(user2);
                 Usuario user3  =new Usuario("Ambar","123");
                 userTienda.add(user3);
-
                 String user , password ;
-
                 //obtenemos los valores digitados por el usuario
                 user = usuario.getText().toString();
                 password = clave.getText().toString();
@@ -58,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
                         ingreso = true;
                         break;
                     }
-
                }
                 if (ingreso) {
                     Intent siguiente = new Intent(LoginActivity.this, Welcome.class);

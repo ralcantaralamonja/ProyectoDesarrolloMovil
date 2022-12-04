@@ -16,7 +16,7 @@ public class Welcome extends AppCompatActivity {
 
     Button costa, sierra, selva;
 
-    TextView user;
+
     @SuppressLint({"MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
